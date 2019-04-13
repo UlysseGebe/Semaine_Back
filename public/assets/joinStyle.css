@@ -1,0 +1,127 @@
+body {
+    overflow: auto;
+}
+
+
+/*
+* Texte
+*/
+h1
+{
+    color: #56ADFD;
+    font-size: 50px;
+}
+
+.id
+{
+    position: absolute;
+    top: 32%;
+    left: 20px;
+    width: 20px;
+    font-size: 20px;
+    color: #56ADFD;
+    background-color: #ffffff;
+}
+
+.password
+{
+    position: absolute;
+    top: 53.3%;
+    left: 20px;
+    width: 115px;
+    font-size: 20px;
+    color: #56ADFD;
+    background-color: #ffffff;
+}
+
+.pseudo
+{
+    position: absolute;
+    top: 74.5%;
+    left: 20px;
+    width: 70px;
+    font-size: 20px;
+    color: #56ADFD;
+    background-color: #ffffff;
+}
+
+/*
+* Image
+*/
+
+.illustration
+{
+    position: absolute;
+    top: 19%;
+    left: 5%;
+    width: 50%;
+    height: 60%;
+}
+
+.logo
+{
+    width: 258px;
+    height: 83px;
+    margin-left: 130px;
+    margin-top: 30px;
+}
+
+/*
+* Formulaire
+*/
+
+
+form
+{
+    position: absolute;
+    top: 22%;
+    left: 60%;
+    width: 400px;
+    height: auto;
+}
+input
+{
+    width: 400px;
+    height: 45px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #56ADFD;
+    border-radius: 4px;
+}
+
+.Btn
+{
+    position: absolute;
+    top: 115%;
+    left: 53%;
+    width: 212px;
+    height: 56px;
+    background-color: #56ADFD;
+    border-radius: 3px;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;    
+}
+
+.Btn:hover
+{
+    box-shadow: 0 2px 4px 0 rgba(86,173,253,10);
+}
+
+/* Erreurs */
+.message {
+    position: absolute;
+    top: 101%;
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid;
+    width: 400px;
+}
+.message.error {
+    color: red;
+}

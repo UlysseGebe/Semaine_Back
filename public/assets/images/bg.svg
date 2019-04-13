@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="900px" viewBox="0 0 1440 900" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Acceuil</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M530,0 L1440,0 L1440,900 L530,900 C651.484132,784.268172 726.457975,625.357237 726.457975,450 C726.457975,274.642763 651.484132,115.731828 530,-2.84217094e-14 Z" id="path-1"></path>
+        <filter x="-2.0%" y="-1.6%" width="103.1%" height="103.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="-4" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.321568627   0 0 0 0 0.670588235   0 0 0 0 0.992156863  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Acceuil" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Bg">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

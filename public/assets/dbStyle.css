@@ -1,0 +1,514 @@
+body {
+    background-color: #EBEFF3;
+}
+
+/* Commun Start */
+
+.layers {
+    position: relative;
+    width: 1040px;
+    left: calc(130/1440*100%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.layers>div {
+    position: relative;
+    width: 280px;
+    min-height: 100px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(86, 173, 253, 0.1);
+    margin-bottom: 60px;
+    margin-right: 100px;
+}
+
+.layers>div:nth-child(3n+0) {
+    margin-right: 0;
+}
+
+.button {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    right: calc(140/1440*100%);
+    bottom: 40px;
+    background-color: #56ADFD;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 30px;
+    height: 4.5px;
+    border-radius: 50px;
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 4.5px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+/* Commun End */
+
+/* Nourriture/Boisson Start */
+
+.layers>div .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.layers>div .title h2 {
+    margin: 20px;
+}
+
+.layers>div .title .move {
+    position: relative;
+    width: 0.9375rem;
+    height: 0.9375rem;
+    margin-right: 1.8125rem;
+    top: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.layers>div .title .move::before {
+    content: "";
+    position: absolute;
+    background-color: #56ADFD;
+    width: 0.9375rem;
+    height: 0.125rem;
+    border-radius: 3.125rem;
+}
+
+.layers>div .title .move::after {
+    content: "";
+    position: absolute;
+    background-color: #56ADFD;
+    width: 0.125rem;
+    height: 0.9375rem;
+    border-radius: 3.125rem;
+}
+
+.layers>div:not(.layers>div.acquis) div.container .move_1 {
+    background-color: #9B9B9B;
+    position: relative;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    bottom: 20px;
+    left: 200px;
+}
+
+.layers>div:not(.layers>div.acquis) div.container .move_1::before {
+    content: "";
+    position: absolute;
+    background-color: #9B9B9B;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    right: 7.5px;
+}
+
+.layers>div:not(.layers>div.acquis) div.container .move_1::after {
+    content: "";
+    position: absolute;
+    background-color: #9B9B9B;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    left: 7.5px;
+}
+
+.layers>div .itemList {
+    margin: 14px 5px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    max-height: 280px;
+    overflow-y: scroll;
+    padding-right: 15px;
+}
+
+.layers>div:not(.persona) .itemList .container {
+    position: relative;
+    border: 1px solid #EFEFEF;
+    border-radius: 3px;
+    padding: 7px 7px 7px 14px;
+    font-size: 18px;
+    color: #52ABFD;
+    margin: 0 0 16px 0;
+    width: calc(100% - 23px);
+}
+
+.layers>div .itemList div.container p {
+    font-size: 14px;
+    color: #9B9B9B;
+    margin: 0px;
+}
+
+.layers>div .itemList div.container .users {
+    width: 100%;
+    height: 20px;
+    position: relative;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.layers>div .itemList div.container .users .user_btn {
+    width: 20px;
+    height: 20px;
+    background-color: #56ADFD;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.layers>div .itemList div.container .users .user_btn::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 10px;
+    height: 2px;
+    border-radius: 50px;
+}
+
+.layers>div .itemList div.container .users .user_btn::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 2px;
+    height: 10px;
+    border-radius: 50px;
+}
+
+.layers>div .itemList div.container .users .user_perso {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-image: url('https://scontent-cdt1-1.xx.fbcdn.net/v/t31.0-1/c0.0.1439.1439a/21415020_1538803939499495_1965272431162494151_o.jpg?_nc_cat=100&_nc_ht=scontent-cdt1-1.xx&oh=eb473fb13b9ebbb0d97e0b2484ee937b&oe=5D42FC19');
+    background-size: contain;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.layers>div.acquis div.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.layers>div.acquis div.container .move_1 {
+    border: 1px solid #56ADFD;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    margin-right: 5px;
+}
+
+.layers>div.acquis div.container .move_1::before {
+    content: "";
+    position: absolute;
+    background-color: #56ADFD;
+    width: 1px;
+    height: 8px;
+    top: 60%;
+    right: 65%;
+    transform: rotate(90deg);
+    transform-origin: 4px;
+}
+
+.layers>div.acquis div.container .move_1::after {
+    content: "";
+    position: absolute;
+    background-color: #56ADFD;
+    width: 1px;
+    height: 5px;
+    bottom: 40%;
+    right: 65%;
+}
+
+/* Nourriture/Boisson End */
+
+/* Dépense Personna Start */
+
+.layers>div.persona a {
+    position: absolute;
+    transform: rotate(45deg);
+    top: 19.5px;
+    right: 21.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layers>div.persona a::before {
+    content: "";
+    position: absolute;
+    background-color: #333333;
+    width: 16px;
+    height: 2.5px;
+}
+
+.layers>div.persona a::after {
+    content: "";
+    position: absolute;
+    background-color: #333333;
+    width: 2.5px;
+    height: 16px;
+}
+
+.layers>div.persona .id {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 28px 0 22px 0;
+}
+
+.layers>div.persona .id .image {
+    width: 80px;
+    height: 80px;
+    background-image: url('https://cdn1.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg');
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: center;
+    clip-path: circle(40px at center);
+}
+
+.layers>div.persona .id h3 {
+    font-size: 18px;
+}
+
+.layers>div.persona .itemList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-y: scroll;
+    height: 117.5px;
+    padding-right: 5px;
+}
+
+.layers>div.persona .itemList ul.container {
+    list-style: none;
+    margin: 0;
+}
+
+.layers>div.persona .itemList ul.container li {
+    position: relative;
+    margin: 7.5px 0;
+    font-size: 16px;
+}
+
+.layers>div.persona .itemList ul.container li:before {
+    content: "";
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #56ADFD;
+    position: absolute;
+    top: 5px;
+    left: -20px;
+}
+
+.layers>div.persona .itemList ul.price {
+    position: relative;
+    list-style: none;
+    margin: 0 20px 0 0;
+}
+
+.layers>div.persona .itemList ul.price li {
+    position: relative;
+    margin: 7.5px 0;
+    font-size: 16px;
+    color: #56ADFD;
+}
+
+.layers>div.persona .total {
+    position: relative;
+    width: 100%;
+    height: 75px;
+    border-top: 0.7px solid #EBEBEB;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #56ADFD;
+}
+
+/* Dépense Personna End */
+
+
+/*  Popup   */
+
+.layers>div.background {
+    position: fixed;
+    left: 0rem;
+    top: 0rem;
+    background-color: rgba(50, 50, 50, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.layers>div.background .popup {
+    width: 420px;
+    height: 566px;
+    background-color: #ffffff;
+    border-radius: 0.1875rem;
+    box-shadow: 0 4px 8px 0 rgba(86, 173, 253, 0.1);
+    padding: 1rem;
+}
+
+.layers>div.background .popup .close {
+    float: right;
+    cursor: pointer;
+    width: 2rem;
+    transform: scale(1.3);
+    color: #9B9B9B;
+}
+
+.layers>div.background .popup .itemList {
+    max-height: 400px;
+}
+
+.layers>div.background .popup .itemList p {
+    width: 19rem;
+}
+
+.layers>div .itemList label.container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.layers>div .itemList label.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.layers>div .itemList label.container .checkmark {
+    position: absolute;
+    top: calc(50% - 10px);
+    right: 20px;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 2px solid #56ADFD;
+    border-radius: 50%;
+}
+
+/* When the checkbox is checked, add a blue background */
+.layers>div .itemList label.container input:checked~.checkmark {
+    background-color: #56ADFD;
+}
+
+.layers>div .itemList label.container .img_food {
+    position: relative;
+    width: 100px;
+    height: 105px;
+    float: left;
+    margin-right: 10px;
+}
+
+.layers>div.background div.popup .present {
+    padding-left: 20px;
+    transform: translateY(-1.25rem);
+}
+
+.layers>div.background div.popup .present img {
+    width: 6%;
+    transform: translateY(2.8125rem);
+}
+
+.layers>div.background div.popup .present h2 {
+    padding-left: 40px;
+    color: #333333;
+}
+
+.layers>div.background div.popup input[type=search] {
+    background-image: url('images/search.svg');
+    background-position: 5%, 45%;
+    background-repeat: no-repeat;
+    background-size: 4%;
+}
+
+.layers>div.background div.popup input {
+    position: relative;
+    border: 1px solid #EFEFEF;
+    border-radius: 3px;
+    padding: 0 0 0 40px;
+    font-size: 16px;
+    width: 95%;
+    height: 100%;
+    color: #9B9B9B;
+}
+
+.layers>div.besoin div.itemList .container .point {
+    width: 25px;
+    height: 25px;
+    float: right;
+    background-image: url('./images/more.svg');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.layers>div.besoin div.itemList.musique .container {
+    position: relative;
+    border: 1px solid #EFEFEF;
+    border-radius: 3px;
+    padding: 7px 7px 7px 120px;
+    font-size: 18px;
+    color: #52ABFD;
+    margin: 0 0 16px 0;
+    width: calc(100% - 143px);
+}
+
+.layers>div div.itemList .container .jacket {
+    float: left;
+    margin-top: -4.5%;
+    margin-left: -110px;
+    width: 100px;
+    height: 100px;
+}
+
+.layers>div.background div.popup input:not(.sub):not(input[type=search]) {
+    padding: 0;
+    width: 100%;
+}

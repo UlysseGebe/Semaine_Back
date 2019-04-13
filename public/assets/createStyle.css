@@ -1,0 +1,181 @@
+
+/*
+* Texte
+*/
+h1
+{
+    color: #56ADFD;
+    font-size: 50px;
+}
+
+.title
+{
+    position: absolute;
+    top: 15.2%;
+    left: 18px;
+    width: 44px;
+    text-align: left;
+    font-size: 20px;
+    color: #56ADFD;
+    background-color: #ffffff;
+}
+.pseudo 
+{
+    position: absolute;
+    top: 25.8%;
+    left: 18px;
+    width: 66px;
+    text-align: left;
+    font-size: 20px;
+    color: #56ADFD;
+    background-color: #ffffff;
+}
+.password
+{
+    position: absolute;
+    top: 36%;
+    left: 18px;
+    width: 110px;
+    text-align: left;
+    font-size: 20px;
+    color: #56ADFD;
+    background-color: #ffffff;
+}
+.password-conf
+{
+    position: absolute;
+    top: 46.5%;
+    left: 18px;
+    width: 200px;
+    text-align: left;
+    font-size: 20px;
+    color: #56ADFD;
+    background-color: #ffffff;
+}
+.tel
+{
+    position: absolute;
+    top: 56.8%;
+    left: 15px;
+    width: 90px;
+    text-align: left;
+    font-size: 20px;
+    color: #56ADFD;
+    background-color: #ffffff;
+}
+
+.date
+{
+    position: absolute;
+    top: 67.3%;
+    left: 17px;
+    width: 42px;
+    text-align: left;
+    font-size: 20px;
+    color: #56ADFD;
+    background-color: #ffffff;
+}
+
+.adresse
+{
+    position: absolute;
+    top: 77.4%;
+    left: 15px;
+    width: 68px;
+    text-align: left;
+    font-size: 20px;
+    color: #56ADFD;
+    background-color: #ffffff;
+}
+
+.description
+{
+    position: absolute;
+    top: 87.9%;
+    left: 16px;
+    width: 82px;
+    text-align: left;
+    font-size: 20px;
+    color: #56ADFD;
+    background-color: #ffffff;
+}
+/*
+* Image
+*/
+
+.illustration
+{
+    position: absolute;
+    top: 25%;
+    left: 3%;
+    width: 50%;
+    height: 60%;
+}
+
+.logo
+{
+    width: 258px;
+    height: 83px;
+    margin-left: 130px;
+    margin-top: 30px;
+}
+
+/*
+* Formulaire
+*/
+
+.form
+{
+    position: absolute;
+    top: 11%;
+    left: 60%;
+    width: 400px;
+    height: auto;
+}
+
+input
+{
+    width: 400px;
+    height: 45px;
+    padding-left: 17px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #56ADFD;
+    border-radius: 4px;
+}
+
+.Btn
+{
+    position: absolute;
+    top: 110%;
+    left: 53%;
+    width: 212px;
+    height: 56px;
+    background-color: #56ADFD;
+    border-radius: 3px;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;    
+}
+
+.Btn:hover
+{
+    box-shadow: 0 2px 4px 0 rgba(86,173,253,10);
+}
+
+/* Erreurs */
+.message {
+    position: absolute;
+    top: 101%;
+    border-radius: 4px;
+    padding: 15px;
+    border: 1px solid;
+    width: 387px;
+}
+.message.error {
+    color: red;
+}

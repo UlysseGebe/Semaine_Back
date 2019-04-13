@@ -1,0 +1,81 @@
+body {
+    overflow: auto;
+}
+.container
+{
+    width: 100%;
+}
+
+/*
+* Texte
+*/
+h1
+{
+    margin-top: 28%;
+    width: 100%;
+    text-align: center;
+    color: #56ADFD;
+    font-size: 50px;
+}
+
+/*
+* Image
+*/
+
+.illustration
+{
+    position: absolute; 
+    top: 13%;
+    left: 32%;
+    width: 35%;
+    height: 55%;
+}
+
+.logo
+{
+    width: 258px;
+    height: 83px;
+    margin-left: 130px;
+    margin-top: 30px;
+}
+
+/*
+* Btn
+*/
+.Btn
+{
+    position: absolute;
+    top: 80%;
+    left: 43%;
+    width: 212px;
+    height: 56px;
+    background-color: #56ADFD;
+    border-radius: 3px;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;    
+}
+.a
+{
+    position: absolute;
+    top: 80%;
+    left: 43%;
+    width: 212px;
+    height: 56px;
+    background-color: #56ADFD;
+    border-radius: 3px;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;    
+}
+
+.a:hover
+{
+    box-shadow: 0 2px 4px 0 rgba(86,173,253,10);
+}

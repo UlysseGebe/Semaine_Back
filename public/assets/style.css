@@ -1,0 +1,149 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    min-width: 1440px;
+    height: 80px;
+    background-color: white;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+.navMenu {
+    width: 1040px;
+    position: relative;
+    font-size: 18px;
+    left: calc(130/1440*100%);
+    margin: 60px 0 44px 0;
+}
+
+.navMenu ul {
+    width: 900px;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    list-style: none;
+    color: rgba(51, 51, 51, 0.5);
+    display: flex;
+    align-items: center;
+}
+
+.navMenu ul li {
+    width: 180px;
+    height: 40px;
+    border: 1px solid rgba(51, 51, 51, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(51, 51, 51, 0.5);
+    cursor: pointer;
+}
+
+.navMenu ul li:hover,
+.navMenu ul li.active {
+    width: 180px;
+    height: 48px;
+    color: white;
+    background-color: #56ADFD;
+    border: 1px solid #56ADFD;
+    border-radius: 3px;
+}
+
+
+/*
+* Texte
+*/
+body
+{
+    margin: 0;
+    padding: 0;
+}
+.nav
+{
+    width: 100%;
+    min-width: 1440px;
+    height: 5rem;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(86, 173, 253, 0.1);
+}
+
+.nav .logo
+{
+    position: absolute;
+    top: 0.5625rem;
+    left: 42%;
+    width: 11.875rem;
+    height: 3.875rem;
+}
+
+.session
+{
+    position: absolute;
+    top: 1.75rem;
+    left: 8.125rem;
+    width: 8.75rem;
+    height: 1.4375rem;
+}
+.session_img
+{
+    width: 1rem;
+    height: 1rem;
+    padding-top: 0.1875rem;
+    padding-right: 0.625rem;
+}
+
+.session_text
+{
+    position: absolute;
+    top: -0.0625rem;
+    left: 1.5625rem;
+    font-size: 1.125rem;
+    color: #333333;
+}
+
+.profil
+{
+    position: absolute;
+    top: 0.875rem;
+    right: 10.625rem;
+    width: 9.625rem;
+    height: 3.25rem;
+}
+
+.profil img
+{
+    width: 3.25rem;
+    height: 3.25rem;
+    clip-path: circle(50% at center);
+}
+
+.profil span
+{
+    position: absolute;
+    width: 6rem;
+    height: 1.25rem;
+    top: 0.9375rem;
+    left: 3.875rem;
+    font-size: 1.125rem;
+    color: #333333;
+}
+
+.log
+{
+    position: absolute;
+    top: 1.875rem;
+    right: 8.125rem;
+    width: 1.1875rem;
+    height: 1.1875rem;
+    cursor: pointer;
+}

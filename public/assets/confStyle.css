@@ -1,0 +1,115 @@
+body
+{
+    width: 100%;
+    height: 100%;
+}
+
+/*
+* Logo
+*/
+.logo
+{
+    width: 258px;
+    height: 83px;
+    margin-left: 8.125rem;
+    margin-top: 1.875rem;
+}
+/*
+**
+**
+**
+*/
+.container {
+    position: absolute;
+    top:22%;
+    left:10%;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+	font-size: 50px;
+	color:#52ABFD;
+    margin-block-end: 55px;
+    margin-block-start: 30px;
+}
+
+h2.give {
+	font-size: 30px;
+	color:#52ABFD;
+    margin-block-end: 45px;
+    margin-block-start: -30px;
+}
+
+.illustration {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+/*
+* Button
+*/
+a
+{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 1.125rem;
+}
+
+.btn1 a 
+{
+    padding: 1rem 0 0 3.9375rem;
+}
+
+.btn2 a 
+{
+    padding: 1rem 0 0 3.125rem;
+}
+
+.btnwrap {
+    position: absolute;
+    top:100%;
+    left:30%;
+    display: flex;
+    flex-direction: initial;
+}
+
+.btn1
+{
+    width: 13.25rem;
+    height: 3.4375rem;
+    background-color: #56ADFD;
+    border-radius: 3px;
+    border: none;
+    font-size: 1.125rem;
+    color: #ffffff;
+    cursor: pointer;    
+}
+
+.btn2
+{
+
+    width: 13.25rem;
+    height: 3.4375rem;
+    margin-left: 3rem;
+    background-color: #52ABFD;
+    border-radius : 3px;
+    border: none;
+    font-size: 1.125rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.btn1:hover
+{
+    box-shadow: 0 2px 4px 0 rgba(86,173,253,10);
+}
+.btn2:hover
+{
+    box-shadow: 0 2px 4px 0 rgba(86,173,253,10);
+}
